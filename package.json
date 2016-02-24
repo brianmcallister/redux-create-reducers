@@ -1,0 +1,11 @@
+{
+  "name": "redux-create-reducers",
+  "version": "0.0.1",
+  "description": "A convenience function for creating reducers for Redux.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Wm. McAllister <brian@brianmcallister.com>",
+  "license": "ISC"
+}
