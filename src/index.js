@@ -1,3 +1,5 @@
+import { assign } from 'object-assign';
+
 const createReducer = (defaultState = {}, reducer) => (state, action) => {
   let states = {};
   let handleAction = (type, ...args) => {
@@ -10,7 +12,7 @@ const createReducer = (defaultState = {}, reducer) => (state, action) => {
 
     // Handle a single 'null' value, which means to reset everything back to default.
     if (actionData.length === 1 && actionData[0] === null) {
-      return Object.assign({});
+      return assign({});
     }
 
     // Handle function values.
@@ -22,7 +24,7 @@ const createReducer = (defaultState = {}, reducer) => (state, action) => {
       return value;
     });
 
-    return Object.assign({}, state, defaultState, ...actionData);
+    return assign({}, state, defaultState, ...actionData);
   }
 
   reducer(handleAction);
