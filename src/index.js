@@ -1,4 +1,4 @@
-import { assign } from 'object-assign';
+import assign from 'object-assign';
 
 const createReducer = (defaultState = {}, reducer) => (state, action) => {
   let states = {};
