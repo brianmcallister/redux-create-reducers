@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Brian Wm. McAllister <brian@brianmcallister.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.5.1",
