@@ -1,6 +1,6 @@
 {
   "name": "redux-create-reducers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A convenience function for creating reducers for Redux.",
   "main": "dist/index.js",
   "files": [
