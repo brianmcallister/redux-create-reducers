@@ -5,6 +5,7 @@ const createReducer = (defaultState = {}, reducer) => (state, action) => {
   }
   let reduceStates = (state = defaultState, action) => {
     let actionData = states[action.type];
+    let result = {};
 
     if (!actionData) return state;
 
@@ -22,7 +23,11 @@ const createReducer = (defaultState = {}, reducer) => (state, action) => {
       return value;
     });
 
-    return { ...state, ...actionData };
+    for (let item of actionData) {
+      result = { ...result, ...item }
+    }
+
+    return { ...state, ...result };
   }
 
   reducer(handleAction);
